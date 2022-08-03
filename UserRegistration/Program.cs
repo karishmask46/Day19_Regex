@@ -1,6 +1,6 @@
 ﻿using UserRegistration;
 Patterns patterns= new Patterns();
-if (patterns.validateString("Shaik"))
+if (patterns.ValidateString("Karishma"))
 
 {
     Console.WriteLine("Valid");

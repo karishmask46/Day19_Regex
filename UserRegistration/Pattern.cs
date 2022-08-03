@@ -9,11 +9,13 @@ namespace UserRegistration
 {
      class Patterns
     {
-        public static string RegexName = "^[A-Z][a-z]{3,}$";
+        
+        public static string LastName= "^[A-Z][a-z]{3,}$";
 
-        public bool validateString(string sample)
+       
+        public bool ValidateString(string lsName)
         {
-            return Regex.IsMatch(sample, RegexName);
+            return Regex.IsMatch(lsName, LastName);
         }
     }
 }
