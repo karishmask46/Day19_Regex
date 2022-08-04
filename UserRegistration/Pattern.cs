@@ -10,11 +10,11 @@ namespace UserRegistration
      class Patterns
     {
 
-        public static string Regex_PassWord = "^[A-Za-z0-9]{8,}$";
+        public static string Regex_PassWord2 = "^[A-Z][a-z0-9]{7,}$";
 
         public bool ValidateString(string password)
         {
-            return Regex.IsMatch(password,Regex_PassWord);
+            return Regex.IsMatch(password,Regex_PassWord2);
         }
     }
 }
