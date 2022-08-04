@@ -10,12 +10,13 @@ namespace UserRegistration
      class Patterns
     {
         
-        public static string LastName= "^[A-Z][a-z]{3,}$";
+        public static string Regex_Email= "^[A-Za-z]{3,}([.][A-Za-z]{3,})?[@][A-Za-z]{2,}[.][A-Za-z]{2,}([.][A-Za-z]{2})?$";
 
-       
-        public bool ValidateString(string lsName)
+
+
+        public bool ValidateString(string email)
         {
-            return Regex.IsMatch(lsName, LastName);
+            return Regex.IsMatch(email,Regex_Email);
         }
     }
 }
