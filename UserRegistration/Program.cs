@@ -1,6 +1,6 @@
 ﻿using UserRegistration;
 Patterns patterns= new Patterns();
-if (patterns.ValidateString("Abc.xyz@gmail.co.in"))
+if (patterns.ValidateString("91 9981632445"))
 
 {
     Console.WriteLine("Valid");

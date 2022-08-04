@@ -9,10 +9,8 @@ namespace UserRegistration
 {
      class Patterns
     {
-        
-        public static string Regex_Email= "^[A-Za-z]{3,}([.][A-Za-z]{3,})?[@][A-Za-z]{2,}[.][A-Za-z]{2,}([.][A-Za-z]{2})?$";
 
-
+        public static string Regex_Email = "^[1-9][0-9][ ]?[6-9][0-9]{9}$";
 
         public bool ValidateString(string email)
         {
