@@ -8,12 +8,14 @@ using System.Threading.Tasks;
 namespace UserRegistration
 {
      class Patterns
-    {
+     { 
 
-        public static string Regex_PassWord4 = "^[A-Za-z]{8,}[A-Z]{1,}[0-9]{1,}[-~!@#$%^*()_+{}:|?`;',]{1,}$";
+        public static string Regex_Email1 = "^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2,})?$";
+
         public bool ValidateString(string password)
         {
-            return Regex.IsMatch(password,Regex_PassWord4);
+            return Regex.IsMatch(password, Regex_Email1);
+            
         }
-    }
+     }
 }
